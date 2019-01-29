@@ -8,7 +8,7 @@ process.stdin.on('readable', function () {
             process.stdout.write('Quitting app!\n');
             process.exit();
         } else {
-            process.stdout.write('Wrong instruction!\n');
+            process.stderr.write('Wrong instruction!\n');
         }
     }
 });
